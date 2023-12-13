@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../Common/style.css">
+  <script src="../Common/Script.js" ></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Math.fun</title>
+  <script src="https://kit.fontawesome.com/930b88ffba.js" crossorigin="anonymous"></script>
+  <style>
+    #H {
+      color: #01070c;
+      font-weight: bold;
+    }
+
+    .cards {
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: #111;
+      cursor: pointer;
+    }
+
+    .grid-container {
+      background: none;
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      gap: 80px;
+      padding: 20px 100px;
+      grid-template-rows: 200px 200px;
+
+    }
+
+    .grid-container>div {
+      background: rgb(204, 243, 246);
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 30px;
+      border-radius: 8px;
+      border: 2px solid black;
+      transition: ease-in-out 0.3s;
+    }
+
+    .grid-container>div:hover {
+      transform: scale(1.03);
+    }
+
+    .box2 {
+      transition: none;
+    }
+    .box2:hover{
+      transform: none;
+    }
+
+    .grid-container>div:active {
+      background-color: rgb(42, 120, 236);
+    }
+
+    .grid-container>div:hover {
+      transition: 0.5s ease;
+      background-color: rgb(29, 203, 230);
+    }
+
+    .box1 {
+      height: auto;
+      width: 1000px;
+      border: 2px solid black;
+      border-radius: 8px;
+
+    }
+
+    .contact {
+      margin-left: 35px;
+    }
+
+    .btn.btn2 {
+      display: block;
+      align-items: left;
+      color: black;
+      background: #f2dfc6;
+      font-weight: 700;
+      cursor: pointer;
+      margin-left: 180px;
+      margin-top: 5px;
+      padding: auto;
+
+    }
+
+    .btn2:active {
+      background-color: #ffdeda;
+      outline: 0;
+    }
+
+    .btn2:hover {
+      transition: 0.5s ease;
+      background-color: rgb(14, 221, 10);
+    }
+
+    .contact-left {
+      flex-basis: 35%;
+
+
+      margin-top: -430px;
+      margin-left: 700px;
+    }
+
+    .contact-right {
+      flex-basis: 60%;
+      margin-right: 15px;
+    }
+
+    .contact-left p {
+      margin-top: 30px;
+    }
+
+    .contact-left p i {
+      color: rgb(14, 221, 10);
+      margin-right: 15px;
+      font-size: 25px;
+
+    }
+
+    .social-icons {
+      margin-top: 30px;
+      margin-left: 50px;
+
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 30px;
+      margin-right: 15px;
+      color: #ababab;
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: rgb(14, 221, 10);
+      transform: translateY(-5px);
+    }
+
+    .contact-right form {
+      width: 100%;
+    }
+
+    form input,
+    form textarea {
+      width: 50%;
+      border: 0;
+      outline: 0;
+      background: rgb(255, 255, 255);
+      border-bottom: 1px solid #000000;
+      padding: 15px;
+      margin: 15px 0;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      border-radius: 6px;
+      resize: none;
+      margin-left: 34px;
+    }
+
+    form .btn2 {
+      padding: 14px 60px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    #msg {
+      color: #000;
+      margin-top: -85px;
+      display: flex;
+      margin-left: 180px;
+
+    }
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <div class="wrapper" id="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo" style="margin-right: 460px;"><a href="#">MATH.FUN</a></div>
+          <ul class="links">
+            <li><a href="../home/math.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop-link">Features</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Features</label>
+              <ul>
+                <li><a href="../Number_Checker/Checker.html">Number Checker</a></li>
+                <li><a href="../Series_Generetor/Printer.html">Series Generator</a></li>
+                <li><a href="../Simple_Calculator/Calculator.html">Number Calculator</a></li>
+                <li><a href="../Table_Generator/Table.html">Table Generator</a></li>
+                <li><a href="../Area_Calculator/Area.html">Area Calculator</a></li>
+                <li><a href="../Math_quiz/Quiz.html">Math Quiz</a></li>
+              </ul>
+            </li>
+            <li><a href="#CONTACT">Help</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <br><br><br><br>
+    <h1 style="font-weight: 1000;">MATH IS EASY</h1><br>
+    <div class="box1">
+      <h2 style="font-size: xx-large; text-align: left;padding: 5px 15px;"> About </h2>
+      <h4 style="padding: 20px 15px;" align="justify"> Welcome to math.fun! This web application was born out of my
+        passion for simplifying mathematics. With math.fun, I aimed to create a user-friendly tool that makes math
+        enjoyable and accessible to everyone. From basic calculations to advanced series generation and geometry,
+        math.fun has you covered. Explore the world of numbers and shapes with ease, and let's make math fun together!
+      </h4>
+    </div>
+    <br><br>
+    <h2 class="" style=" background: none; padding-left: 20px; font-size: 25px; font-weight: 1000;"> You can explore
+      various concepts of mathematics below ... </h2>
+    <br><br>
+    <div class="grid-container">
+      <div><a href="../Number_Checker/Checker.html" class="cards"> NUMBER CHECKER</a></div>
+      <div><a href="../Series_Generetor/Printer.html" class="cards">SERIES GENERATOR</div></a>
+      <div><a href="../Simple_Calculator/Calculator.html" class="cards">SIMPLE CALCULATOR</a></div>
+      <div><a href="../Table_Generator/Table.html" class="cards">TABLE GENERATOR </a></div>
+      <div><a href="../Area_Calculator/Area.html" class="cards">AREA CALCULATOR </a></div>
+      <div><a href="../Math_quiz/Quiz.html" class="cards">Math Quiz </a></div>
+      
+    </div>
+  </main>
+<br><br><br>
+  <div class="box1 box2" id="CONTACT"  >
+    
+    <div class="contact-right" >
+    <form name="submit-to-google-sheet"  >
+      <input type="text" name="Name" placeholder="Enter Name" required>
+      <input type="email" name="E-mail" placeholder="Enter email" required>
+      <textarea name="Message"  rows="6" placeholder="Enter your message"></textarea>
+      <button type="submit" class="btn btn2" id="submitButton" style="padding-bottom: 30px;">Submit</button>
+      <br><br>
+      <br><br>
+      <br><br>
+    </form>
+    <span id="msg"></span>
+  </div>
+  </div>
+
+  <div class="contact-left">
+   
+    <h1 style="margin-right: 200px;">CONTACT ME</h1> <br>
+    <p> <i class="fa-solid fa-envelope"></i> jatin071103@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i>  +917876635520</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/jatin.vardhan.10/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/JatinVardhan"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jatin-vardhan-74086128b/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/jatin_var_dhan/"><i class="fa-brands fa-instagram"></i></a>
+
+    </div>
+   
+
+</div>
+  
+  
+  
+  <script src="Main.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjyFPNRegllUH5kPowtFFIGbOHJi58hnBEvNJMhKnxaLx364GH1s9IeTmQVjD4-7BL/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>

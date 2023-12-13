@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Number CHEKER</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="../Common/style.css">
+  <script src="../Common/Script.js" ></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src='Table.js'></script>
+  <style>
+.box1 {
+      height: auto;
+    }
+    #p2{
+      margin-left: 200px;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrapper" id="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo" style="margin-right: 460px;"><a href="#">MATH.FUN</a></div>
+          <ul class="links">
+            <li><a href="../home/math.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop-link">Features</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Features</label>
+              <ul>
+                <li><a href="../Number_Checker/Checker.html">Number Checker</a></li>
+                <li><a href="../Series_Generetor/Printer.html">Series Generator</a></li>
+                <li><a href="../Simple_Calculator/Calculator.html">Number Calculator</a></li>
+                <li><a href="../Table_Generator/Table.html">Table Generator</a></li>
+                <li><a href="../Area_Calculator/Area.html">Area Calculator</a></li>
+                <li><a href="../Math_quiz/Quiz.html">Math Quiz</a></li>
+              </ul>
+            </li>
+            <li><a href="Note4.html">Notes</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <br><br><br><br>
+    <h1> Table Generator</h1>
+    <h3>Hello.....<span style="background: none;">👋</span><br>Here you can calculate the multiples of any number </h3>
+    <p style="text-align: center; font-size: small; margin-left: 0;">(*For details click on Notes button).</p><br>
+    <div class="box1">
+      <h2>Table Generator </h2>
+      <label> Enter your Number : </label>
+      <input type="number" id="num1" placeholder="Number Here" Required><br><br>
+      <button  type="button" onclick="table()">PRINT</button> 
+      <br>
+      <p id="p1"><br></p><br>
+      <p id="p2"><br></p>
+      <br><br>
+    </div><br><br>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../Common/style.css">
+  <script src="../Common/Script.js" ></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Math.fun</title>
+
+  <style>
+    .box1 {
+      height: auto;
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    h2, h3 {
+      text-align: left;
+    }
+
+    i {
+      font-size: 40px;
+      color: #fff;
+      margin-top: 25px;
+      margin-left: -210px;
+    }
+
+    i:hover {
+      background: #323c4e;
+      font-size: 45px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper" id="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <div class="logo" style="margin-right: 460px;"><a href="#">MATH.FUN</a></div>
+        <ul class="links">
+          <li><a href="Printer.html"><i class='fas fa-angle-double-left'></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </header>
+  <main>
+    <br><br><br><br>
+    <h1 style="font-weight: 1000; text-align: center;">NOTES</h1><br>
+    <div class="box1">
+      <h2 style="font-size: x-large; text-align: left;">  Factors </h2>
+      <p style="padding: 15px 0;" align="justify">Factors are the building blocks of any number. Every positive integer can be expressed as a product of prime numbers, and these prime numbers are its prime factors.</p>
+      <br>
+      <h3>Example:</h3>
+      <p align="justify">The prime factorization of 24 is 2 x 2 x 2 x 3 or 2^3 x 3, where 2 and 3 are prime numbers.</p><br>
+      <h3>Interesting Facts:</h3>
+      <p class="interesting-facts">
+        1. The Fundamental Theorem of Arithmetic states that every positive integer has a unique prime factorization.
+        <br>2. Prime factorization is crucial in number theory and cryptography.
+        <br>3. The Sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit.
+      </p>
+    </div>
+
+    <div class="box1">
+      <h2 style="font-size: x-large; text-align: left;"> Fibonacci Series </h2>
+      <p style="padding: 15px 0;" align="justify">The Fibonacci series is a sequence of numbers in which each number is the sum of the two preceding ones, usually starting with 0 and 1. It has widespread applications in mathematics and nature.</p>
+      <br>
+      <h3 style="text-align: left;">Example:</h3>
+      <p align="justify">The Fibonacci series starts: 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on. Each number is the sum of the two preceding numbers.</p><br>
+      <h3>Interesting Facts:</h3>
+      <p class="interesting-facts">
+        1. Fibonacci numbers appear in various natural phenomena, such as the arrangement of leaves on a stem or the spiral of a nautilus shell.
+        <br>2. The ratio of consecutive Fibonacci numbers converges to the golden ratio, approximately 1.618.
+        <br>3. Fibonacci numbers are used in algorithms for searching and sorting.
+      </p>
+    </div>
+
+    <div class="box1">
+      <h2 style="font-size: x-large; text-align: left;"> Arithmetic Progression (AP) Series </h2>
+      <p style="padding: 15px 0;" align="justify">Arithmetic Progression (AP) is a sequence of numbers in which the difference of any two successive members is a constant. This constant difference is known as the "common difference."</p>
+      <br>
+      <h3>Example:</h3>
+      <p align="justify">In the AP series 2, 5, 8, 11, 14, the common difference is 3. Each term is obtained by adding 3 to the previous term.</p>
+      <br>
+      <h3>Interesting Facts:</h3>
+      <p class="interesting-facts" >
+        1. The general form of an AP series is given by a, a+d, a+2d, a+3d, and so on.
+        <br>2. AP series is widely used in mathematics, physics, and finance.
+        <br>3. The sum of the first n terms of an AP series can be calculated using specific formulas.
+        <br>
+        <pre>            
+                 i.e.  Sn = n/2 [2a + (n-1)d]
+
+            where 
+            n represents the number of terms of AP
+            a is the first term of the AP
+            d is the common difference of AP</pre>
+      </p>
+    </div>
+  </div>
+
+  <div class="box1">
+    <h2 style="font-size: x-large; text-align: left;"> GP Series (Geometric Progression) </h2>
+      <pstyle="padding: 15px 0;" align="justify">Geometric Progression (GP) is a sequence of numbers in which the ratio of any two successive members is a constant. This constant ratio is known as the "common ratio."</p>
+      <br>
+      <h3>Example:</h3>
+      <p align="justify">In the GP series 2, 6, 18, 54, 162, the common ratio is 3. Each term is obtained by multiplying the previous term by 3.</p>
+      <br>
+      <h3>Interesting Facts:</h3>
+      <p class="interesting-facts">
+        1. The general form of a GP series is given by a, ar, ar^2, ar^3, and so on.
+        <br>2. GP series is used in various fields, including physics, biology, and finance.
+        <br>3. The sum of the first n terms of a GP series can be calculated using specific formulas.
+        <pre>
+           The sum of a GP is the sum of a few or all terms of a geometric progression. GP sum is calculated by one of the following formulas:
+
+            Sum of n terms of GP, Sn = a(1 - rn) / (1 - r), when r ≠ 1
+            Sum of infinite terms of GP, Sn = a / (1 - r), when |r| < 1
+
+            Here, 'a' is the first term and 'r' is the common ratio of GP. 
+        </pre>
+      </p>
+    </div>
+  </div>
+
+</main>
+</body>
+
+</html>

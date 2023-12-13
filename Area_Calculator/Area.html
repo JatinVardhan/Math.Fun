@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Number CHEKER</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="../Common/style.css">
+  <script src="../Common/Script.js" ></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src='Area.js'></script>
+  <style>
+    button {
+      display: inline;
+      margin-left: 130px;
+      width: 150px;
+    }
+
+    label {
+      width: 230px;
+    }
+
+    .box1 {
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrapper" id="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo" style="margin-right: 460px;"><a href="#">MATH.FUN</a></div>
+          <ul class="links">
+            <li><a href="../home/math.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop-link">Features</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Features</label>
+              <ul>
+                <li><a href="../Number_Checker/Checker.html">Number Checker</a></li>
+                <li><a href="../Series_Generetor/Printer.html">Series Generator</a></li>
+                <li><a href="../Simple_Calculator/Calculator.html">Number Calculator</a></li>
+                <li><a href="../Table_Generator/Table.html">Table Generator</a></li>
+                <li><a href="../Area_Calculator/Area.html">Area Calculator</a></li>
+                <li><a href="../Math_quiz/Quiz.html">Math Quiz</a></li>
+              </ul>
+            </li>
+            <li><a href="Note5.html">Notes</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <br><br><br><br>
+    <h1> Area Calculator</h1>
+    <h3>Hello.....<span style="background: none;">👋</span><br>Here you can calculate the area of various shapes </h3>
+    <p style="text-align: center; font-size: small; margin-left: 0;">(*For details click on Notes button).</p><br>
+    <div class="box1">
+      <h2> Circle </h2>
+      <label> Enter the Radius Value: </label>
+      <input type="number" id="num1" placeholder="Radius Here"><br><br>
+      <p id="p1"><br></p>
+      <br>
+      <button type="button" onclick="area1()">AREA</button>
+      <button type="button" onclick="circum()">CIRCUMFERENECE</button>
+      <br><br>
+    </div><br><br>
+    <div class="box1">
+      <h2> Triangle </h2>
+      <label> Enter the Base Value : </label>
+      <input type="number" id="num2" placeholder="Base value Here"><br><br>
+      <label> Enter the Height Value : </label>
+      <input type="number" id="num3" placeholder="Height value Here"><br><br>
+      <p id="p2"><br></p>
+      <br>
+      <button style="margin-left:270px" type="button" onclick="area2()">AREA</button>
+      <br><br>
+    </div><br><br>
+    <div class="box1">
+      <h2> Square </h2>
+      <label> Enter the Edge value : </label>
+      <input type="number" id="num4" placeholder="Edge value Here"><br><br>
+      <p id="p3"><br></p>
+      <br>
+      <button type="button" onclick="area3()">AREA</button>
+      <button type="button" onclick="param1()">PERIMETER</button>
+      <br><br>
+    </div><br><br>
+    <div class="box1">
+      <h2> Rectangle </h2>
+      <label> Enter the Base Value : </label>
+      <input type="number" id="num5" placeholder="Base value Here"><br><br>
+      <label> Enter the Length Value : </label>
+      <input type="number" id="num6" placeholder="Length  value Here"><br><br>
+      <p id="p4"><br></p>
+      <br>
+      <button type="button" onclick="area4()">AREA</button>
+      <button type="button" onclick="param2()">PERIMETER</button>
+      <br><br>
+    </div><br><br>
+
+  </main>
+</body>
+
+</html>
